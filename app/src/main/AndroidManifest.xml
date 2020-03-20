@@ -3,6 +3,7 @@
     package="training.android">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -14,6 +15,8 @@
         <activity android:name=".UserDetailActivity"
             android:parentActivityName=".MainActivity"/>
         <activity android:name=".GreenActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".WebviewActivity"
             android:parentActivityName=".MainActivity"/>
         <activity android:name=".MainActivity">
             <intent-filter>

@@ -331,6 +331,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             startActivity(intent)
         }
 
+        findViewById<Button>(R.id.start_activity_webview_button).setOnClickListener {
+            val intent = Intent(this, WebviewActivity::class.java)
+            startActivity(intent)
+        }
+
 
         Log.v(TAG, "verbose message")
         Log.d(TAG, "debug message")
