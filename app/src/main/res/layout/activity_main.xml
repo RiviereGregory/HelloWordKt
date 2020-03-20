@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TitleFont.Red"
+        android:text="Hello From MainActivity" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TitleFont"
+        android:text="MainActivity" />
+
+    <Button
+        android:id="@+id/start_activity_green_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Green Activity"/>
+
+    <Button
+        android:id="@+id/start_activity_user_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User detail"/>
+    <Button
+        android:id="@+id/delete_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Tel"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <Button
+        android:id="@+id/update_countries_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Mettre à jour les pays"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/countries_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/update_countries_button"/>
+    </RelativeLayout>
+
+</LinearLayout>
