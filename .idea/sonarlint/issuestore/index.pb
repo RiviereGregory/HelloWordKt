@@ -13,3 +13,13 @@ P
  app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
 _
 /app/src/main/java/training/android/Operation.kt,2\2\22635a27ac7ae765f073c6e355130b8345c17890
+A
+gradle.properties,2\a\2afbb999f001938c88fa43fc2ef52abf0f8213e4
+X
+(gradle/wrapper/gradle-wrapper.properties,f\b\fbe448ebfc3eb2d4e308f6b8b043666f5b57235e
+@
+local.properties,0\7\0712df971a99ac4d2fccb8e0fb19f377f3374cca
+c
+3app/src/main/java/training/android/GreenActivity.kt,1\e\1ee7473ce783a00231f63d3ccf85d5ba99a8e523
+e
+5app/src/main/java/training/android/WebviewActivity.kt,c\e\ce331c92fb7e2d3fd048c7986d5321da014dc9dd
