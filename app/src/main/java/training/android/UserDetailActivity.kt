@@ -12,6 +12,7 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.converter.scalars.ScalarsConverterFactory
 
 class UserDetailActivity : AppCompatActivity() {
@@ -37,6 +38,25 @@ class UserDetailActivity : AppCompatActivity() {
 
             override fun onResponse(call: Call<String>, response: Response<String>) {
                 Log.i(TAG, "User agent response: ${response?.body()}")
+            }
+
+        })
+
+        //JSON
+        val retrofitJson = Retrofit.Builder()
+            .baseUrl("http://httpbin.org/")
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
+        val serviceJson = retrofitJson.create(HttpBinServiceJson::class.java)
+        val callJson = serviceJson.getUserInfo()
+        callJson.enqueue(object : Callback<GetData> {
+            override fun onFailure(call: Call<GetData>, t: Throwable) {
+                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+            }
+
+            override fun onResponse(call: Call<GetData>, response: Response<GetData>) {
+                val getData = response?.body()
+                Log.i(TAG, "Received url : ${getData?.url}")
             }
 
         })
