@@ -23,3 +23,11 @@ c
 3app/src/main/java/training/android/GreenActivity.kt,1\e\1ee7473ce783a00231f63d3ccf85d5ba99a8e523
 e
 5app/src/main/java/training/android/WebviewActivity.kt,c\e\ce331c92fb7e2d3fd048c7986d5321da014dc9dd
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
+]
+-app/src/main/java/training/android/GetData.kt,b\f\bf14b45bd00bc94e077c05399777c91affdfdb6c
+h
+8app/src/main/java/training/android/HttpBinServiceJson.kt,0\9\09f1d8636a288cc589690598e634818e08688d27
+j
+:app/src/main/java/training/android/HttpBinServiceString.kt,d\f\dfe0fdef5436d71d078329d147a0bea485c332a2

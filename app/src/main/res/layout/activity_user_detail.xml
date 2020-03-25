@@ -32,5 +32,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Rafraichir" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/update_users_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="Mettre à jour les utilisateurs"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/users_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/update_users_button"/>
+        </RelativeLayout>
     </LinearLayout>
 </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
